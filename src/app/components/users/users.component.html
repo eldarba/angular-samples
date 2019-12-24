@@ -1,0 +1,33 @@
+User Name: <input type="text" [(ngModel)]="userName">
+<br>
+<button [disabled]="!allowAdd" [innerHTML]="msg" (click)="addUser()"></button>{{userName}}
+
+<p>allow add = {{allowAdd}}</p>
+<p>user creationn status = {{usersCreationStatus}}</p>
+
+
+
+<app-user></app-user>
+<app-user></app-user>
+<app-user></app-user>
+
+<hr>
+
+<input type="text" [(ngModel)]="msg1">
+<br>
+<input type="text" [(ngModel)]="msg1">
+<br>
+<input type="range" [(ngModel)]="msg1" min="0" max="1000">
+<br>
+<input type="button" [value]="msg1">
+<br>
+<input type="checkbox" [(ngModel)]="msg1">
+<br>
+<input type="color" [(ngModel)]="msg1">
+<br>
+<input type="number" [(ngModel)]="msg1">
+<hr>
+
+<input type="color" [(ngModel)]="color"><br>
+<input type="text" [(ngModel)]="color"><br>
+<div id="div1" style="height: 50px;" [style.width.px]="200" [style.backgroundColor]="rgb(146, 168, 209)"></div>
